@@ -1,2 +1,13 @@
-# Portfolio-
-The ATM System is a simple Java-based simulation program. It provides secure login with password authentication. Users can check balance, withdraw money, and deposit cash. It ensures proper balance validation for safe transactions. The program runs interactively until the user chooses to exit.
+#  Bhavya Sree | Portfolio Website
+
+This is my personal portfolio website built using **HTML** and **CSS**.  
+It showcases my **skills, projects, and contact details** in a clean and responsive design.
+
+## 🔧 Technologies Used
+- HTML  
+- CSS  
+
+## 🚀 Features
+- Responsive single-page layout  
+- About, Skills, Projects, and Contact sections  
+- Links to GitHub and LinkedIn profiles
