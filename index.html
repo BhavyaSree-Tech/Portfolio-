@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Reddy | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Arial", sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #00adb5;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #00adb5;
+    }
+
+    /* Home Section */
+    #home {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(120deg, #00adb5, #393e46);
+      color: white;
+      padding-top: 80px;
+    }
+
+    #home h1 {
+      font-size: 2.5rem;
+    }
+
+    #home p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      background: white;
+      color: #00adb5;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+      color: black;
+    }
+
+    /* About */
+    #about {
+      width: 85%;
+      margin: 100px auto;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00adb5;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    /* Skills */
+    #skills {
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+    }
+
+    #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00adb5;
+    }
+
+   .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    }
+
+    .skill {
+    background: #00adb5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+    /* Projects */
+    #projects {
+      width: 85%;
+      margin: 100px auto;
+      text-align: center;
+    }
+
+    #projects h2 {
+      color: #00adb5;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .project {
+      background: white;
+      width: 300px;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .project h3 {
+      color: #393e46;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Contact */
+    #contact {
+      background: #393e46;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    #contact h2 {
+      color: #00adb5;
+      margin-bottom: 15px;
+    }
+
+    #contact a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Fix for fixed navbar */
+    section {
+      scroll-margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      .project-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Bhavya Reddy</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Hi, I'm <span>Bhavya Sree</span></h1>
+    <p>B.Tech Data Science Student |Full Stack Developer</p>
+    <a href="#projects" class="btn">See My Projects</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a student passionate about coding and problem-solving.  
+      I love building websites using HTML, CSS, and JavaScript, and I also enjoy Python programming for backend logic.  
+      My goal is to become a skilled software or data engineer.
+    </p>
+  </section>
+  
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java (Basics)</div>
+    </div>
+   </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Coding Projects</h2>
+    <div class="project-grid">
+
+      <div class="project">
+        <h3>🌐 Simple Portfolio Website</h3>
+        <p>
+          A clean and responsive personal portfolio made using HTML and CSS.
+          It showcases personal info, skills, and projects in a single page layout.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>🏧 ATM Simulation (Java)</h3>
+        <p>
+          A Java-based console application that simulates ATM functions like withdrawal,
+          balance inquiry, and PIN validation using control statements.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto: bhavyareddy5586@gmail.com">bhavyareddy5586@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/BhavyaSree-Tech" target="_blank">Visit Github profile</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhavya-sree7956" target="_blank">Visit LinkedIn Profile</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bhavya Reddy | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
